@@ -1,18 +1,24 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
-      backgroundImage : {
-        'active-input': 'linear-gradient(90deg, hsl(249, 99%, 64%) 0%, hsl(278, 94%, 30%) 100%)'
+      backgroundImage: {
+        'active-input':
+          'linear-gradient(90deg, hsl(249, 99%, 64%) 0%, hsl(278, 94%, 30%) 100%)'
       },
-      boxShadow:{
-        'deafult': "0 0 3px 1px rgba(0, 0, 0, 0.35)"
+      boxShadow: {
+        deafult: '0 0 3px 1px rgba(0, 0, 0, 0.35)'
+      },
+      spacing: {
+        15: '3.75rem',
+        23: '5.75rem',
+        61: '15.25rem'
       }
     },
     colors: {
@@ -25,17 +31,22 @@ const config: Config = {
       violet: 'hsl(278, 68%, 11%)'
     },
     fontSize: {
-      'sxm': '0.625rem'
+      xb: '1.75rem',
+      bg: '1.25rem',
+      xm: '0.875rem',
+      md: '0.75rem',
+      sm: '0.625rem'
     },
     letterSpacing: {
-      tighter: '-0.05em',
-      tight: '-0.10em',
-      normal: '0',
-      wide: '0.07em',
-      wider: '0.16em',
-    },
-    
+      xb: '0.16em',
+      bg: '0.14em',
+      xm: '0.12em',
+      md: '0.07em',
+      none: '0',
+      sm: '-0.05em',
+      xs: '-0.10em'
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;

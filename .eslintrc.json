@@ -34,6 +34,24 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
-      "camelcase": "off"
+      "camelcase": "off",
+      "no-inline-comments":"off",
+      "sort-imports": "off",
+      "sort-keys": "off",
+      "one-var": "off",
+      "new-cap":"off",
+      "multiline-comment-style":"off",
+      "line-comment-position":"off",
+      "no-magic-numbers": "off",
+      "capitalized-comments":"off",
+      "no-unused-vars":"warn",
+      "@typescript-eslint/no-unused-vars":"warn",
+      "react/display-name": "off",
+      "no-console":"off",
+      "@typescript-eslint/no-explicit-any":"warn",
+      "max-lines-per-function":"off",
+      "no-ternary":"off",
+      "no-undefined": "off",
+      "require-unicode-regexp": "off"
     }
   }
