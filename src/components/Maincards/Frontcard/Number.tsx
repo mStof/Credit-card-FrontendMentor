@@ -7,7 +7,7 @@ const CardNumber: React.FC<{ cardNumber: string }> = ({ cardNumber }) => {
     );
   }
 
-  const cardNumberPlace = cardNumber && cardNumber.match(/\d{1,4}/gu).join(' ');
+  const cardNumberPlace = cardNumber && cardNumber.match(/\d{1,4}/g)?.join(' ');
   return (
     <p className="text-bg text-white-100 leading-none -tracking-tighter mb-4 mt-8 sm:tracking-xm sm:text-xb sm:mt-16 sm:mb-7">
       {cardNumber && cardNumber.length <= 16
